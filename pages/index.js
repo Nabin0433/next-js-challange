@@ -1,82 +1,130 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Footer from "../components/p-1/Footer";
+import Header from "../components/p-1/Header";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+      <Header />
+      <main className="">
+        <div className=" flex-col-reverse flex md:flex-row  items-center justify-between mt-10 md:mt-40 px-8 md:px-44">
+          <div className="bg-white flex-1 mt-20 md:mt-0">
+            <h4 className="text-3xl font-bold">Hi, I am John,</h4>
+            <h4 className="text-3xl font-bold">Creative Technologist</h4>
+            <p className="mt-8 text-base font-normal">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <button
+              className="bg-red-400 px-6 py-4 mt-8 rounded-xl text-white hover:bg-red-500 transition duration-150 active:scale-95 active:transform hover:shadow-lg"
+              onClick={() => null}
+            >
+              Download Resume
+            </button>
+          </div>
+          <div className="flex-1">
+            <div className="relative h-60 rounded-full w-60 float-right shadow-md hover:shadow-2xl hover:animate-spin">
+              <Image
+                className="rounded-full"
+                src="https://picsum.photos/800/800"
+                alt="Nabin"
+                objectPosition="center"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          style={{ backgroundColor: "#EDF7FA" }}
+          className="md:px-44 py-20 mt-20 md:mt-40 px-8"
+        >
+          <div className="flex justify-between items-center capitalize font-normal">
+            <h2 className="text-lg">Recent posts</h2>
+            <p className=" text-blue-400 cursor-pointer text-base">View all</p>
+          </div>
+          <div className="md:flex justify-between md:space-x-60 space-y-16 md:space-y-0 items-center mt-8">
+            <div className="bg-white rounded-sm px-12 pt-10 pb-6 shadow-lg hover:shadow-2xl">
+              <h2 className=" font-bold text-3xl">
+                Making a design system from scratch
+              </h2>
+              <div className="flex items-center space-x-3 my-6 font-normal text-lg">
+                <p>12 Feb 2020</p>
+                <p className="border-r-2 border-black h-4 " />
+                <p>Design, Pattern</p>
+              </div>
+              <p className="font-normal text-base">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div className="bg-white rounded-sm px-12 pt-10 pb-6 shadow-lg hover:shadow-2xl">
+              <h2 className=" font-bold text-3xl">
+                Making a design system from scratch
+              </h2>
+              <div className="flex items-center space-x-3 my-6 font-normal text-lg">
+                <p>12 Feb 2020</p>
+                <p className="border-r-2 border-black h-4 " />
+                <p>Design, Pattern</p>
+              </div>
+              <p className="font-normal text-base">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white md:px-44 px-8">
+          <h2 className=" text-xl font-normal my-10">Featured works</h2>
+          <div className="space-y-20 md:space-y-8 border-b-2 border-gray-400 pb-16">
+            {Array(4)
+              .fill("")
+              .map((_, i) => (
+                <div
+                  key={i}
+                  className="md:flex justify-start md:space-x-6 items-start"
+                >
+                  <div className="relative h-60 md:w-96 mb-8 md:mb-0">
+                    <Image
+                      className="hover:scale-110 rounded-md transform transition duration-200 cursor-move"
+                      src="https://picsum.photos/500/800"
+                      alt="Nabin"
+                      objectPosition="center"
+                      layout="fill"
+                      objectFit="fill"
+                    />
+                  </div>
+                  <div className="space-y-8">
+                    <h2 className="font-bold text-3xl cursor-help">
+                      Designing Dashboards
+                    </h2>
+                    <div className="flex justify-start items-center space-x-4">
+                      <p className="bg-black py-1 px-2 text-white font-black text-lg rounded-3xl">
+                        2020
+                      </p>
+                      <p className="text-gray-500 ">Dashboard</p>
+                    </div>
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet.
+                    </p>
+                  </div>
+                </div>
+              ))}
+          </div>
         </div>
       </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      <Footer />
     </div>
-  )
+  );
 }
