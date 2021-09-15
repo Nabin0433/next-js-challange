@@ -12,7 +12,7 @@ const blog = () => {
       </Head>
       <Header props="blog" />
       <main>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center px-8 md:px-0">
           <div className="md:w-2/4 space-y-10">
             <h2 className="font-bold text-3xl mt-24 mb-14">Blog</h2>
             {blogModal.map((blog) => (
