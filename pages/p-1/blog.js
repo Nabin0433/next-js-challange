@@ -2,7 +2,7 @@ import Header from "../../components/p-1/Header";
 import Head from "next/head";
 import BlogCard from "../../components/p-1/BlogCard";
 import Footer from "../../components/p-1/Footer";
-import blogModal from "../../components/p-1/Modal/Blog.model";
+import blogModal from "../../components/p-1/Model/Blog.model";
 
 const blog = () => {
   return (

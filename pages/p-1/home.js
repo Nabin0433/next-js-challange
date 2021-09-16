@@ -2,8 +2,8 @@ import Head from "next/head";
 import Footer from "../../components/p-1/Footer";
 import Header from "../../components/p-1/Header";
 import Image from "next/image";
-import UserModel from "../../components/p-1/Modal/User.model";
-import WorkModel from "../../components/p-1/Modal/Work.model";
+import UserModel from "../../components/p-1/Model/User.model";
+import WorkModel from "../../components/p-1/Model/Work.model";
 import { useRouter } from "next/dist/client/router";
 
 export default function Home() {

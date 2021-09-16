@@ -2,7 +2,7 @@ import Header from "../../components/p-1/Header";
 import Head from "next/head";
 import Footer from "../../components/p-1/Footer";
 import Image from "next/image";
-import ContactModel from "../../components/p-1/Modal/Contact.model";
+import ContactModel from "../../components/p-1/Model/Contact.model";
 
 const contact = () => {
   return (
