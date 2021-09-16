@@ -5,7 +5,7 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 ## Demo
 
-Link : next-js-challange.vercel.app
+Link : [Demo](next-js-challange.vercel.app)
 
 ## Preview
 
