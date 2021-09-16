@@ -8,7 +8,7 @@ const Header = ({ props }) => {
       <div>
         <ul
           className={`cursor-pointer text-black hover:text-yellow-800`}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/p-1/home")}
         >
           <FaHome size={40} />
         </ul>
@@ -18,7 +18,7 @@ const Header = ({ props }) => {
           className={`cursor-pointer ${
             props === "work" ? "text-red-600" : "hover:text-yellow-400"
           }`}
-          onClick={() => router.push("/work")}
+          onClick={() => router.push("/p-1/work")}
         >
           Works
         </ul>
@@ -26,7 +26,7 @@ const Header = ({ props }) => {
           className={`cursor-pointer ${
             props === "blog" ? "text-red-600" : "hover:text-yellow-400"
           }`}
-          onClick={() => router.push("/blog")}
+          onClick={() => router.push("/p-1/blog")}
         >
           Blog
         </ul>
@@ -34,7 +34,7 @@ const Header = ({ props }) => {
           className={`cursor-pointer ${
             props === "contact" ? "text-red-600" : "hover:text-yellow-400"
           }`}
-          onClick={() => router.push("/contact")}
+          onClick={() => router.push("/p-1/contact")}
         >
           Contact
         </ul>

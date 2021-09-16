@@ -1,8 +1,8 @@
 import { useRouter } from "next/dist/client/router";
-import Footer from "../../components/p-1/Footer";
-import Header from "../../components/p-1/Header";
+import Footer from "../../../components/p-1/Footer";
+import Header from "../../../components/p-1/Header";
 import Image from "next/image";
-import WorkModel from "../../components/p-1/Modal/Work.model";
+import WorkModel from "../../../components/p-1/Modal/Work.model";
 
 const wordDetails = () => {
   const router = useRouter();

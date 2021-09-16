@@ -1,8 +1,8 @@
-import Header from "../components/p-1/Header";
+import Header from "../../components/p-1/Header";
 import Head from "next/head";
-import Footer from "../components/p-1/Footer";
-import WorkCard from "../components/p-1/WorkCard";
-import WorkModel from "../components/p-1/Modal/Work.model";
+import Footer from "../../components/p-1/Footer";
+import WorkCard from "../../components/p-1/WorkCard";
+import WorkModel from "../../components/p-1/Modal/Work.model";
 
 const work = () => {
   return (

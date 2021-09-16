@@ -5,7 +5,7 @@ const WorkCard = ({ work }) => {
   const router = useRouter();
   return (
     <div
-      onClick={() => router.push("/work/" + work.id)}
+      onClick={() => router.push("/p-1/work/" + work.id)}
       className="border-b-2 border-gray-200 md:flex  md:space-x-16 hover:shadow-2xl p-2 px-6 pb-8 mx-3 md:mx-0"
     >
       <div className="relative w-full h-[200px] md:h-auto md:w-[300px] lg:w-[600px] cursor-pointer mb-8 md:mb-0">
