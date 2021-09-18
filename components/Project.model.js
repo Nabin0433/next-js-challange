@@ -22,16 +22,23 @@ export default [
   },
   {
     name: "day-4",
-    tittle: "Soon...",
-    tag: "Soon...",
+    tittle: "Landing Page UI KIT",
+    tag: "Completed",
     link: "/p-4/home",
-    info: "Soon...Soon...Soon...",
+    info: "Concise and Compelling Headline (and Subheading) A headline is one of the most important pieces of a perfect landing page,Hero Shot.Identification of Audience Problems,Expression of Your Solutions,List of Features and Benefits,Credentials.",
   },
   {
     name: "day-5",
-    tittle: "Soon...e",
-    tag: "Soon...",
+    tittle: "Registration onboarding design",
+    tag: "Completed",
     link: "/p-5/home",
+    info: "The onboarding process is essentially a series of screens which direct users through an app interface. These onboarding screens have three purposes: Educate the user about the functions and benefits of the app",
+  },
+  {
+    name: "day-6",
+    tittle: "Registration onboarding design",
+    tag: "Soon...",
+    link: "/p-6/home",
     info: " Soon...Soon...Soon....",
   },
 ];
