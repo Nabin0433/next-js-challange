@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import { useSprings, animated, to } from "react-spring";
 import { useDrag } from "react-use-gesture";
-import Image from "next/Image";
 
 const cards = [
   {
