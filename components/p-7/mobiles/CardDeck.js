@@ -115,7 +115,7 @@ const CardDeck = () => {
         <div className="p-8">
           <h2 className="font-bold text-2xl">{cards[i].name}</h2>
           <h2 className="font-semibold text-xl mt-4">{cards[i].job}</h2>
-          <div className="relative mt-8 w-full h-[200px] md:h-[30opx] lg:h-[40vh]   pointer-events-none">
+          <div className="relative mt-8 w-full  h-[180px] md:h-[30opx] lg:h-[40vh]  pointer-events-none">
             <Image
               src={cards[i].img}
               alt=""
@@ -124,7 +124,7 @@ const CardDeck = () => {
               objectFit="fill"
             />
           </div>
-          <p className="font-light text-sm md:text-base mt-12">
+          <p className="font-light text-xs sm:text-sm md:text-base mt-12">
             {cards[i].info}
           </p>
         </div>

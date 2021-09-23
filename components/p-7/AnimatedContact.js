@@ -84,7 +84,7 @@ export default class AnimatedContact extends React.Component {
               <h2 className="font-bold text-2xl md:text-7xl">
                 Internet Identity
               </h2>
-              <p className="text-base font-normal">
+              <p className="md:text-base text-sm font-normal ">
                 Internet Identity guarantees that your data isn’t visible,
                 tracked, or mined. The blockchain authentication system enables
                 users to sign in to dapps on the Internet Computer and sites
@@ -92,7 +92,7 @@ export default class AnimatedContact extends React.Component {
                 usernames or passwords, and backed by Chain Key cryptography,
                 information can’t be viewed by anyone.
               </p>
-              <button className="py-3 px-20 rounded-full shadow hover:text-gray-300">
+              <button className="md:py-3 md:px-20 py-3 px-8 rounded-full shadow hover:text-gray-300">
                 INTERNET IDENTITY DOCS s
               </button>
             </div>

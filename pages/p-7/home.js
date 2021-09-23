@@ -36,7 +36,7 @@ const Home = () => {
                 Securely connect smart contracts with off-chain data and
                 services
               </h2>
-              <p className="font-normal text-md">
+              <p className="font-normal md:text-md text-xs">
                 Chainlink decentralized oracle networks provide tamper-proof
                 inputs, outputs, and computations to support advanced smart
                 contracts on any blockchain.
@@ -80,7 +80,7 @@ const Home = () => {
                     <h2 className="font-semibold md:text-2xl text-lg group-hover:text-gray-500">
                       Reliable, tamper-proof network
                     </h2>
-                    <p className="text-sm md:text-base font-normal group-hover:text-gray-400">
+                    <p className="text-xs md:text-base font-normal group-hover:text-gray-400">
                       Use decentralization, trusted nodes, premium data, and
                       cryptographic proofs to connect highly accurate and
                       available data/APIs to any smart contract.
