@@ -27,14 +27,14 @@ export default function Home() {
                 <AiFillFolderOpen size={200} />
               </p>
               <div className="space-y-4 capitalize">
-                <h2 className="font-bold text-3xl">{item.tittle}</h2>
+                <h2 className="font-bold text-xl md:text-3xl">{item.tittle}</h2>
                 <div className="flex justify-start items-center space-x-8">
-                  <p className=" inline-block rounded-full py-1 px-2 bg-gray-800 group-hover:bg-yellow-500 text-white">
+                  <p className=" inline-block rounded-full py-1 px-2 bg-gray-800 group-hover:bg-yellow-500 text-white text-xs md:text-base">
                     {item.name}
                   </p>
                   <p>-</p>
                   <p
-                    className={`inline-block rounded-full py-1 px-2 ${
+                    className={`inline-block text-sm md:text-base rounded-full py-1 px-2 ${
                       item.tag === "Completed"
                         ? "bg-green-800 group-hover:bg-yellow-800"
                         : "bg-gray-500 group-hover:bg-yellow-600"

@@ -36,9 +36,16 @@ export default [
   },
   {
     name: "day-6",
-    tittle: "Registration onboarding design",
-    tag: "Soon...",
+    tittle: "Dark landing page design",
+    tag: "Completed",
     link: "/p-6/home",
-    info: " Soon...Soon...Soon....",
+    info: "Buy dark landing pages & templates from $6. All created by our Global Community of independent Web Designers and Developers.",
+  },
+  {
+    name: "day-7",
+    tittle: "IT-Companey-landing-page",
+    tag: "Soon ...",
+    link: "/p-7/home",
+    info: "Something with white background as shown in above two examples + backgro…",
   },
 ];
