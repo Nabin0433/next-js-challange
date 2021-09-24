@@ -2,24 +2,24 @@ import { useRef, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 const calc = (x, y, rect) => [
-  -(y - rect.top - rect.height / 2) / 5,
-  (x - rect.left - rect.width / 2) / 5,
-  1.4,
+  -(y - rect.top - rect.height / 2) / 8,
+  (x - rect.left - rect.width / 2) / 8,
+  1.2,
 ];
 
 const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+  `perspective(1000px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const CodeCard = ({ text }) => {
   const ref = useRef(null);
   const [xys, set] = useState([0, 0, 1]);
   const config = {
-    mass: 80,
-    tension: 900,
-    friction: 80,
+    mass: 0,
+    tension: 0,
+    friction: 0,
     clamp: true,
-    precision: 50,
-    velocity: 0.01,
+    precision: 0,
+    velocity: 0,
     easing: (t) => t,
   };
   const props = useSpring({ xys, config });
@@ -29,7 +29,7 @@ const CodeCard = ({ text }) => {
       <animated.div
         className="w-full h-full border border-gray-500 rounded-2xl shadow-3xl transition duration-150 transform py-5 px-8"
         style={{ transform: props.xys.to(trans) }}
-        onMouseLeave={() => set([0, 0, 0.8])}
+        onMouseLeave={() => set([0, 0, 1])}
         onMouseMove={(e) => {
           const rect = ref.current.getBoundingClientRect();
           set(calc(e.clientX, e.clientY, rect));

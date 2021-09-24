@@ -10,6 +10,9 @@ import Footer from "../../components/p-7/Footer";
 import AnimatedContact from "../../components/p-7/AnimatedContact";
 
 import { GoArrowSmallDown } from "react-icons/go";
+import { IoCall } from "react-icons/io5";
+import { HiMail } from "react-icons/hi";
+import WaterWave from "../../components/animations/WaterWave";
 
 const Home = () => {
   const scroll = (id) => {
@@ -42,12 +45,16 @@ const Home = () => {
                 contracts on any blockchain.
               </p>
               <div className="flex space-x-8">
-                <button className="px-6 py-2 cursor-pointer border hover:text-gray-500 border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl">
-                  Contact
-                </button>
-                <button className="px-6 py-2 cursor-pointer border hover:text-gray-500 border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl">
-                  Mail us
-                </button>
+                <a href="callto:9824317734">
+                  <button className="px-6 py-2 cursor-pointer border hover:text-gray-500 border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl">
+                    Contact
+                  </button>
+                </a>
+                <a href="mailto:Day1x.com.np">
+                  <button className="px-6 py-2 cursor-pointer border hover:text-gray-500 border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl">
+                    Mail us
+                  </button>
+                </a>
               </div>
             </div>
           </LightSpeed>
@@ -117,7 +124,36 @@ const Home = () => {
         </div>
       </main>
       <AnimatedContact />
-
+      <div id="about" className="text-gray-200 bg-gray-700">
+        <div className="lg:px-80 md:px-20 px-8 py-4">
+          <h2 className="font-bold text-4xl md:py-10 py-20">Contact us</h2>
+          <div className="cursor-pointer md:flex items-center md:space-x-8 bg-gray-700">
+            <div className="relative md:h-40 md:w-60 h-20 w-40 bg-gray-900 rounded-lg">
+              <Image
+                className=" rounded-lg"
+                src="/assets/images/p-7/logo.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="space-y-2 text-gray-400 py-8 md:p-0">
+              <p className="font-semibold text-gray-200">Day1x pvt ltd.</p>
+              <p>Prasiddhi Tower, Pulchowk, Lalitpur - 3, Nepal</p>
+              <div className="flex items-center space-x-4">
+                <div className="hover:text-gray-800 flex space-x-2 items-center">
+                  <IoCall size={16} />
+                  <a href="callto:9824317734">9824317734</a>
+                </div>
+                <div className="hover:text-green-600 flex space-x-2 items-center">
+                  <HiMail size={16} />
+                  <a href="mailto:Day1x@gmail.com">Day1x@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );

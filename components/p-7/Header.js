@@ -17,29 +17,40 @@ const Header = () => {
     setOpen(false);
   };
   return (
-    <div>
-      <header className="hidden md:block py-4 md:px-20 px-8 shadow-md capitalize">
-        <div className="flex justify-between items-center text-lg font-bold">
+    <div className="bg-gray-200">
+      <header className="hidden md:block py-4 md:px-20 px-8  shadow-md capitalize">
+        <div className="flex justify-between items-center  text-lg font-semibold">
           <div>logo</div>
           <div className="flex items-center space-x-6">
-            <ul className="px-4 py-1 cursor-pointer border border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
-              Hire us
-            </ul>
+            <a href="mailto:Day1x@gmail.com.np">
+              <ul className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
+                Hire us
+              </ul>
+            </a>
             <ul
-              className="px-4 py-1 cursor-pointer border border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
+              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
               onClick={() => scroll("projects")}
             >
               Projects
             </ul>
-            <ul className="px-4 py-1 cursor-pointer border border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
+            <ul
+              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
+              onClick={() => scroll("Develops")}
+            >
               Develops
             </ul>
           </div>
           <div className="flex items-center space-x-6">
-            <ul className="px-4 py-1 cursor-pointer border border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
+            <ul
+              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
+              onClick={() => scroll("contact")}
+            >
               contact us
             </ul>
-            <ul className="px-4 py-1 cursor-pointer border border-gray-400 hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
+            <ul
+              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
+              onClick={() => scroll("about")}
+            >
               about us
             </ul>
           </div>

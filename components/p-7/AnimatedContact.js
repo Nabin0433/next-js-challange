@@ -1,5 +1,7 @@
 import React from "react";
 import { TransitionMotion, spring } from "react-motion";
+import TypeWriter from "react-typewriter";
+import Swing from "react-reveal/Swing";
 
 const leavingSpringConfig = { stiffness: 60, damping: 15 };
 
@@ -79,34 +81,35 @@ export default class AnimatedContact extends React.Component {
         </TransitionMotion>
         <div className="absolute  inset-0 bg-gray-700 z-20 text-gray-200">
           <div className="flex justify-between items-center mt-8 ml-8 md:mx-80 md:mt-20">
-            <div></div>
-            <div className="md:space-y-8 space-y-4">
-              <h2 className="font-bold text-2xl md:text-7xl">
-                Internet Identity
-              </h2>
-              <p className="md:text-base text-sm font-normal ">
-                Internet Identity guarantees that your data isn’t visible,
-                tracked, or mined. The blockchain authentication system enables
-                users to sign in to dapps on the Internet Computer and sites
-                across the web anonymously and securely. Without a need for
-                usernames or passwords, and backed by Chain Key cryptography,
-                information can’t be viewed by anyone.
-              </p>
-              <button className="md:py-3 md:px-20 py-3 px-8 rounded-full shadow hover:text-gray-300">
-                INTERNET IDENTITY DOCS s
-              </button>
+            <div className="">
+              <TypeWriter typing={3}>
+                <h2 className="font-bold text-2xl md:text-7xl">
+                  Join our team
+                </h2>
+              </TypeWriter>
+              <br />
+              <TypeWriter typing={4}>
+                <p className="md:text-base text-sm font-normal ">
+                  We understand that our people are the key to our success. Our
+                  work environment fosters collaboration, communication, and
+                  information sharing. We offer state-of-the-art infrastructure,
+                  including advanced network servers, modern workstations,
+                  videoconferencing, teleconferencing, database analytics,
+                  software testing, IT management, and business processes.
+                  Verisk Nepal is an equal opportunity employer. If you’re
+                  interested in joining our dynamic, collaborative team, please
+                  send your resume to us.
+                </p>
+              </TypeWriter>
+              <br className="hidden" />
+              <br />
+              <TypeWriter typing={3}>
+                <button className="md:py-3 md:px-20 py-3 px-8 rounded-full shadow hover:text-gray-300">
+                  Mail us To Day1x@gmail.com
+                </button>
+              </TypeWriter>
             </div>
           </div>
-        </div>
-        <div className=" hidden flex-col space-y-6 items-center">
-          <h2 className="font-bold text-2xl mt-8">
-            STAY UP TO DATE ON ALL THINGS INTERNET COMPUTER
-          </h2>
-          <input
-            className="h-14 w-1/4 bg-gray-500 rounded-2xl pl-6 text-gray-300 cursor-pointer z-50 pointer-events-auto"
-            type="email"
-            placeholder="example@__.com.np"
-          />
         </div>
       </div>
     );
