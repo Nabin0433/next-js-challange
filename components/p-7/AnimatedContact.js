@@ -1,7 +1,6 @@
 import React from "react";
 import { TransitionMotion, spring } from "react-motion";
 import TypeWriter from "react-typewriter";
-import Swing from "react-reveal/Swing";
 
 const leavingSpringConfig = { stiffness: 60, damping: 15 };
 
