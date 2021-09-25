@@ -3,7 +3,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import LightSpeed from "react-reveal/LightSpeed";
 import { BiMenuAltRight } from "react-icons/bi";
-
+import Image from "next/image";
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -20,7 +20,15 @@ const Header = () => {
     <div className="bg-gray-200">
       <header className="hidden md:block py-4 md:px-20 px-8  shadow-md capitalize">
         <div className="flex justify-between items-center  text-lg font-semibold">
-          <div>logo</div>
+          <div className="relative w-60 h-16 scale-150 cursor-pointer">
+            <Image
+              src="/assets/images/p-7/logo.png"
+              alt="day1x"
+              layout="fill"
+              objectPosition="center"
+              objectFit="cover"
+            />
+          </div>
           <div className="flex items-center space-x-6">
             <a href="mailto:Day1x@gmail.com.np">
               <ul className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
@@ -35,9 +43,9 @@ const Header = () => {
             </ul>
             <ul
               className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
-              onClick={() => scroll("Develops")}
+              onClick={() => scroll("services")}
             >
-              Develops
+              Services
             </ul>
           </div>
           <div className="flex items-center space-x-6">
@@ -57,6 +65,15 @@ const Header = () => {
         </div>
       </header>
       <header className="md:hidden">
+        <div className="relative w-40 h-20 scale-150 cursor-pointer">
+          <Image
+            src="/assets/images/p-7/logo.png"
+            alt="day1x"
+            layout="fill"
+            objectPosition="center"
+            objectFit="cover"
+          />
+        </div>
         <div className="fixed top-0 right-0 z-30 p-2">
           <button
             className="px-6 mt-2 shadow active:shadow-lg active:scale-90"
@@ -81,11 +98,13 @@ const Header = () => {
               <LightSpeed>
                 <h2 className="font-bold text-2xl">Menu</h2>
                 <p onClick={() => scroll("projects")}>Projects</p>
-                <p>Develops</p>
-                <p onClick={() => scroll("employes")}>Employes</p>
-                <p>contact us</p>
-                <p>about us</p>
-                <p>Hire us</p>
+                <p onClick={() => scroll("Develops")}>Develops</p>
+                <p onClick={() => scroll("services")}>Services</p>
+                <p onClick={() => scroll("contact")}>contact us</p>
+                <p onClick={() => scroll("about")}>about us</p>
+                <a href="mailto:Day1x@gmail.com.np">
+                  <p>Hire us</p>
+                </a>
               </LightSpeed>
             )}
           </div>

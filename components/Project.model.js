@@ -48,4 +48,25 @@ export default [
     link: "/p-7/home",
     info: "Something with white background as shown in above two examples + backgro…",
   },
+  {
+    name: "day-8",
+    tittle: "..",
+    tag: "Soon ...",
+    link: "/p-8/home",
+    info: "...",
+  },
+  {
+    name: "day-9",
+    tittle: "..",
+    tag: "Soon ...",
+    link: "/p-9/home",
+    info: "...",
+  },
+  {
+    name: "day-10",
+    tittle: "....",
+    tag: "Soon ...",
+    link: "/p-10/home",
+    info: "...",
+  },
 ];

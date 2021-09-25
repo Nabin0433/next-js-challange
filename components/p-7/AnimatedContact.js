@@ -15,7 +15,7 @@ export default class AnimatedContact extends React.Component {
     // Make sure the state is queued and not batched.
     this.setState(() => {
       return {
-        mouse: [clientX - 14, clientY / 2 - 138],
+        mouse: [clientX - 14, clientY / 2],
         now: "t" + Date.now(),
       };
     });
