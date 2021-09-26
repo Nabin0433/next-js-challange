@@ -4,7 +4,7 @@ import "react-modern-drawer/dist/index.css";
 import LightSpeed from "react-reveal/LightSpeed";
 import { BiMenuAltRight } from "react-icons/bi";
 import Image from "next/image";
-const Header = () => {
+const Header = ({ items }) => {
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -30,37 +30,22 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center space-x-6">
-            <a href="mailto:Day1x@gmail.com.np">
-              <ul className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
-                Hire us
-              </ul>
-            </a>
-            <ul
-              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
-              onClick={() => scroll("projects")}
-            >
-              Projects
-            </ul>
-            <ul
-              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
-              onClick={() => scroll("services")}
-            >
-              Services
-            </ul>
-          </div>
-          <div className="flex items-center space-x-6">
-            <ul
-              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
-              onClick={() => scroll("contact")}
-            >
-              contact us
-            </ul>
-            <ul
-              className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
-              onClick={() => scroll("about")}
-            >
-              about us
-            </ul>
+            {items?.map((item) =>
+              item.id === "call" ? (
+                <a href="mailto:Day1x@gmail.com.np">
+                  <ul className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl">
+                    {items[0].title}
+                  </ul>
+                </a>
+              ) : (
+                <ul
+                  className="px-4 py-1 cursor-pointer hover:shadow-lg active:scale-95 transform transition duration-150 rounded-xl hover:rounded-2xl"
+                  onClick={() => scroll(item.id)}
+                >
+                  {item.title}
+                </ul>
+              )
+            )}
           </div>
         </div>
       </header>

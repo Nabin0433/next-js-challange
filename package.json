@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@rooks/use-window-size": "^4.11.2",
     "next": "latest",
     "npm": "^7.24.1",
     "preact-particles": "^1.35.1",
@@ -15,6 +16,7 @@
     "react-modern-drawer": "^0.1.1",
     "react-motion": "^0.5.2",
     "react-motion-drawer": "^3.1.0",
+    "react-particle-image": "^1.0.1",
     "react-particles-js": "^3.5.3",
     "react-reveal": "^1.2.2",
     "react-spring": "^9.2.4",

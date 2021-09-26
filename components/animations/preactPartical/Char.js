@@ -55,153 +55,39 @@ const options = {
         enable: false,
         mode: "push",
       },
-      onDiv: {
-        selectors: [],
-        enable: false,
-        mode: [],
-        type: "circle",
-      },
       onHover: {
         enable: true,
+        mode: "grab",
         parallax: {
           enable: true,
-          force: 60,
-          smooth: 10,
+          force: 100,
+          smooth: 150,
         },
       },
       resize: true,
     },
     modes: {
-      attract: {
-        distance: 200,
-        duration: 0.4,
-        easing: "ease-out-quad",
-        factor: 1,
-        maxSpeed: 5,
-        speed: 0.3,
-      },
-      bounce: {
-        distance: 200,
-      },
-      bubble: {
-        distance: 400,
-        duration: 2,
-        mix: false,
-        opacity: 0.8,
-        size: 40,
-      },
-      connect: {
-        distance: 80,
-        links: {
-          opacity: 0.5,
-        },
-        radius: 60,
-      },
       grab: {
         distance: 400,
         links: {
-          blink: false,
-          consent: false,
-          opacity: 1,
+          blink: true,
+          consent: true,
+          opacity: 0.5,
         },
-      },
-      light: {
-        area: {
-          gradient: {
-            start: {
-              value: "#ffffff",
-            },
-            stop: {
-              value: "#000000",
-            },
-          },
-          radius: 1000,
-        },
-        shadow: {
-          color: {
-            value: "#000000",
-          },
-          length: 2000,
-        },
-      },
-      push: {
-        default: true,
-        groups: [],
-        quantity: 4,
-      },
-      remove: {
-        quantity: 2,
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4,
-        factor: 100,
-        speed: 1,
-        maxSpeed: 50,
-        easing: "ease-out-quad",
-      },
-      slow: {
-        factor: 3,
-        radius: 200,
-      },
-      trail: {
-        delay: 1,
-        pauseOnStop: false,
-        quantity: 1,
       },
     },
   },
   manualParticles: [],
   motion: {
-    disable: false,
+    disable: true,
     reduce: {
       factor: 4,
       value: true,
     },
   },
   particles: {
-    bounce: {
-      horizontal: {
-        random: {
-          enable: false,
-          minimumValue: 0.1,
-        },
-        value: 1,
-      },
-      vertical: {
-        random: {
-          enable: false,
-          minimumValue: 0.1,
-        },
-        value: 1,
-      },
-    },
-    collisions: {
-      bounce: {
-        horizontal: {
-          random: {
-            enable: false,
-            minimumValue: 0.1,
-          },
-          value: 1,
-        },
-        vertical: {
-          random: {
-            enable: false,
-            minimumValue: 0.1,
-          },
-          value: 1,
-        },
-      },
-      enable: false,
-      mode: "bounce",
-      overlap: {
-        enable: true,
-        retries: 0,
-      },
-    },
     color: {
-      value: "#80807d",
+      value: ["#4a2f10", "#521710", "#0d174d", "#4f5054", "#202021"],
       animation: {
         h: {
           count: 0,
@@ -274,25 +160,19 @@ const options = {
     links: {
       blink: false,
       color: {
-        value: "#ffffff",
+        value: ["#4a2f10", "#521710", "#0d174d", "#4f5054", "#202021"],
       },
       consent: false,
-      distance: 150,
+      distance: 100,
       enable: true,
       frequency: 1,
-      opacity: 0.4,
-      shadow: {
-        blur: 5,
-        color: {
-          value: "#00ff00",
-        },
-        enable: false,
-      },
+      opacity: 0.2,
+
       triangles: {
         enable: false,
         frequency: 1,
       },
-      width: 1,
+      width: 0.8,
       warp: false,
     },
     move: {
@@ -459,14 +339,14 @@ const options = {
           value: ["D", "A", "Y", "1", "X"],
           font: "Verdana",
           style: "",
-          weight: "600",
+          weight: "800",
           fill: true,
         },
         char: {
           value: ["D", "A", "Y", "1", "X"],
           font: "Verdana",
           style: "",
-          weight: "600",
+          weight: "800",
           fill: true,
         },
       },
@@ -488,35 +368,6 @@ const options = {
         minimumValue: 10,
       },
     },
-    stroke: {
-      width: 1,
-      color: {
-        value: "#ffffff",
-        animation: {
-          h: {
-            count: 0,
-            enable: false,
-            offset: 0,
-            speed: 1,
-            sync: true,
-          },
-          s: {
-            count: 0,
-            enable: false,
-            offset: 0,
-            speed: 1,
-            sync: true,
-          },
-          l: {
-            count: 0,
-            enable: false,
-            offset: 0,
-            speed: 1,
-            sync: true,
-          },
-        },
-      },
-    },
     tilt: {
       random: {
         enable: false,
@@ -529,34 +380,7 @@ const options = {
         sync: false,
       },
       direction: "clockwise",
-      enable: false,
-    },
-    twinkle: {
-      lines: {
-        enable: false,
-        frequency: 0.05,
-        opacity: 1,
-      },
-      particles: {
-        enable: false,
-        frequency: 0.05,
-        opacity: 1,
-      },
-    },
-    wobble: {
-      distance: 5,
-      enable: false,
-      speed: 50,
-    },
-    zIndex: {
-      random: {
-        enable: false,
-        minimumValue: 0,
-      },
-      value: 0,
-      opacityRate: 1,
-      sizeRate: 1,
-      velocityRate: 1,
+      enable: false, //true for 3D
     },
   },
   pauseOnBlur: true,

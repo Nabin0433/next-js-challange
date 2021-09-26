@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
+import Slide from "react-reveal/Slide";
 
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 8,
@@ -46,12 +47,15 @@ const CodeCard = ({ text }) => {
               Return
             </button>
           </div>
-          <code className="text-gray-800 space-y-3">
-            <li>function getThePrice() public view returns (int) </li>
-            <li>function getThePrice() public view returns (int) </li>
-            <li>function getThePrice() public view returns (int) </li>
-            <li>function getThePrice() public view returns (int) </li>
-          </code>
+          <Slide right cascade>
+            <code className="text-gray-800 space-y-3">
+              {text?.map((i, id) => (
+                <li className="text-center md:text-left" key={id}>
+                  {i}
+                </li>
+              ))}
+            </code>
+          </Slide>
         </div>
       </animated.div>
     </div>
