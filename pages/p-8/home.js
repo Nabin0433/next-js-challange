@@ -6,6 +6,8 @@ import Rotate from "react-reveal/Rotate";
 import RubberBand from "react-reveal/RubberBand";
 import Flip from "react-reveal/Flip";
 import Zoom from "react-reveal/Zoom";
+import PlanCard from "../../components/p-8/PlanCard";
+import Footer from "../../components/p-8/Footer";
 
 const home = () => {
   return (
@@ -320,6 +322,55 @@ const home = () => {
         </div>
       </div>
       {/* pricing plan with footer */}
+      <div className="relative text-white md:h-screen h-[120vh] overflow-hidden">
+        <div
+          className="absolute md:hidden inset-0 z-10 overflow-hidden"
+          style={{
+            backgroundColor: "#172755",
+          }}
+        />
+        <div
+          className="absolute hidden md:block z-0 inset-0 bg-red-400"
+          style={{
+            clipPath:
+              "polygon(0 8%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 8%)",
+          }}
+        />
+        <div
+          className="absolute hidden md:block inset-0 z-10 overflow-hidden"
+          style={{
+            backgroundColor: "#172755",
+            clipPath:
+              "polygon(0 12%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 22%)",
+          }}
+        />
+        <div className="absolute md:-right-8 -right-4 md:-top-24 top-1/3 z-10">
+          <div className="relative md:h-[1000px] md:w-[1000px] h-[300px] w-[300px]  cursor-pointer">
+            <Image
+              src="/assets/images/p-8/bg-shadow.svg"
+              alt="nabin"
+              layout="fill"
+              objectPosition="center"
+              objectFit="fill"
+            />
+          </div>
+        </div>
+        <div className="absolute top-40 left-1/3 w-[30vw] z-20 flex flex-col justify-center space-y-8">
+          <h2 className="text-center font-bold text-2xl">Pricing Plans</h2>
+          <p className="text-center text-sm text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+            nisi aliquet volutpat pellentesque volutpat est.
+          </p>
+        </div>
+        <div className="absolute top-[40%] w-full z-20 flex justify-center space-x-8">
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+        </div>
+        <div className="absolute top-[90%] w-full z-20 flex justify-center space-x-8">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

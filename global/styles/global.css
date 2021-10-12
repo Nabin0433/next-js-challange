@@ -1,0 +1,57 @@
+.img {
+  /* animation: imgmove infinite ease 2000ms; */
+  animation: 20s linear 0s infinite normal none running imgmove;
+  will-change: transform;
+  /* opacity: 0; */
+}
+
+@keyframes imgmove {
+  100% {
+    /* transform: scaleX(1.3); */
+  }
+}
+
+.wapper::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  box-shadow: inset 0 0 30px 50px black;
+}
+
+.mdiv {
+  position: absolute;
+  top: -21px;
+  width: 100%;
+  bottom: -21px;
+  overflow: hidden;
+  z-index: 10;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  animation: ani 2s linear infinite;
+
+  will-change: transform;
+}
+.div {
+  background-color: black;
+  height: 19px;
+  margin-bottom: 2px;
+  flex-shrink: 0;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0s;
+}
+
+@keyframes ani {
+  100% {
+    transform: translate3d(0, 21px, 0);
+  }
+}

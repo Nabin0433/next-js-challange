@@ -50,10 +50,10 @@ export default [
   },
   {
     name: "day-8",
-    tittle: "..",
-    tag: "Soon ...",
+    tittle: "Analytics — landing page design",
+    tag: "Completed",
     link: "/p-8/home",
-    info: "...",
+    info: "In Google Analytics, any page can be a landing page. It's simply the first page a visitor goes to on your site, essentially their point of arrival. They might get there from clicking a Google search result",
   },
   {
     name: "day-9",
