@@ -69,4 +69,11 @@ export default [
     link: "/p-10/home",
     info: "...",
   },
+  {
+    name: "day-11",
+    tittle: "....",
+    tag: "Soon ...",
+    link: "/p-11/home",
+    info: "...",
+  },
 ];
