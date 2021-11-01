@@ -1,105 +1,99 @@
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
-import {
-  MeshWobbleMaterial,
-  OrbitControls,
-  softShadows,
-} from "@react-three/drei";
-import { useSpring, a } from "@react-spring/three";
+import Image from "next/image";
+import ItemCart from "../../components/p-10/ItemCart";
+import Nav from "../../components/p-10/Nav";
+import { FiArrowDown } from "react-icons/fi";
 
-// soft Shadows
-softShadows();
-
-const SpinningMesh = ({ position, color, speed, args }) => {
-  //ref to target the mesh
-  const mesh = useRef();
-
-  //useFrame allows us to re-render/update rotation on each frame
-  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01));
-
-  //Basic expand state
-  const [expand, setExpand] = useState(false);
-  // React spring expand animation
-  const props = useSpring({
-    scale: expand ? [1.4, 1.4, 1.4] : [1, 1, 1],
-  });
-  return (
-    <a.mesh
-      position={position}
-      ref={mesh}
-      onClick={() => setExpand(!expand)}
-      scale={props.scale}
-      castShadow
-    >
-      <boxBufferGeometry attach="geometry" args={args} />
-      <MeshWobbleMaterial
-        color={color}
-        speed={speed}
-        attach="material"
-        factor={0.6}
-      />
-    </a.mesh>
-    //Using Drei box if you want
-    // <Box {...props} ref={mesh} castShadow>
-    //   <MeshWobbleMaterial
-    //     {...props}
-    //     attach='material'
-    //     factor={0.6}
-    //     Speed={1}
-    //   />
-    // </Box>
-  );
-};
+const items = [
+  {
+    img: "/assets/images/p-10/boy.png",
+    title: "Collector outfit",
+    link: "",
+  },
+  {
+    img: "/assets/images/p-10/doll.png",
+    title: "Doll",
+    link: "",
+  },
+];
 
 const home = () => {
   return (
-    <div className="w-screen h-screen">
-      {/* Our Scene & Camera is already built into our canvas */}
-      <Canvas
-        colorManagement
-        shadowMap
-        camera={{ position: [-5, 2, 10], fov: 60 }}
-      >
-        {/* This light makes things look pretty */}
-        <ambientLight intensity={0.2} />
-        {/* Our main source of light, also casting our shadow */}
-        <directionalLight
-          castShadow
-          position={[0, 10, 0]}
-          intensity={1.5}
-          shadow-mapSize-width={1024}
-          shadow-mapSize-height={1024}
-          shadow-camera-far={50}
-          shadow-camera-left={-10}
-          shadow-camera-right={10}
-          shadow-camera-top={10}
-          shadow-camera-bottom={-10}
+    <div>
+      <div className="relative max-w-screen h-screen md:overflow-hidden overflow-x-hidden">
+        <Image
+          src="/assets/images/p-10/bg.png"
+          alt="squid-bg"
+          objectFit="cover"
+          layout="fill"
+          objectPosition="center"
         />
-        {/* A light to help illumnate the spinning boxes */}
-        <pointLight position={[-10, 0, -20]} intensity={0.5} />
-        <pointLight position={[0, -10, 0]} intensity={1.5} />
-        <group>
-          {/* This mesh is the plane (The floor) */}
-          <mesh
-            rotation={[-Math.PI / 2, 0, 0]}
-            position={[0, -3, 0]}
-            receiveShadow
-          >
-            <planeBufferGeometry attach="geometry" args={[100, 100]} />
-            <shadowMaterial attach="material" opacity={0.3} />
-          </mesh>
-          <SpinningMesh
-            position={[0, 1, 0]}
-            color="lightblue"
-            args={[3, 2, 1]}
-            speed={3}
+        <div className="absolute z-10 w-[340px] h-[340px] left-0 top-[-205px]">
+          <Image
+            src="/assets/images/p-10/bg-cricle.png"
+            alt="squid-bg"
+            objectFit="cover"
+            layout="fill"
+            objectPosition="center"
           />
-          <SpinningMesh position={[-2, 1, -5]} color="pink" speed={6} />
-          <SpinningMesh position={[5, 1, -2]} color="pink" speed={6} />
-        </group>
-        {/* Allows us to move the canvas around for different prespectives */}
-        <OrbitControls />
-      </Canvas>
+        </div>
+        <div className="absolute z-10 w-[1000px] h-[1000px] -right-40 bottom-[-400px]">
+          <Image
+            src="/assets/images/p-10/bg-cricle.png"
+            alt="squid-bg"
+            objectFit="cover"
+            layout="fill"
+            objectPosition="center"
+          />
+        </div>
+        <div className="absolute z-30 w-20 h-20 right-8 bottom-6 rounded-full">
+          <Image
+            src="/assets/images/p-10/btn-cricle.png"
+            alt="squid-bg"
+            objectFit="cover"
+            layout="fill"
+            objectPosition="center"
+          />
+          <p className="relative top-1/3 left-1/3 text-white">
+            <FiArrowDown size={25} />
+          </p>
+        </div>
+        <div className="absolute z-20 md:px-20 px-4 w-full">
+          <Nav />
+          <div className="md:flex md:space-x-4 items-start justify-between md:mt-20 mt-8">
+            <div className="md:w-1/2 text-white">
+              <div className="relative md:w-[380px] md:h-[200px] w-[200px] h-[100px] my-8">
+                <Image
+                  src="/assets/images/p-10/text.png"
+                  alt="squid-bg"
+                  objectFit="cover"
+                  layout="fill"
+                  objectPosition="center"
+                />
+              </div>
+              <p className="font-medium text-lg md:w-1/2 tracking-wider text-gray-300">
+                Shop your favourite toys and outfits of the Squid Game on the
+                go!
+              </p>
+              <button className="bg-[#E84381] px-16 py-3 rounded-full text-xl my-8">
+                Shop Now
+              </button>
+              <div className="flex space-x-8 mt-20">
+                <ItemCart item={items[0]} />
+                <ItemCart item={items[1]} />
+              </div>
+            </div>
+            <div className="relative md:w-[600px] md:h-[600px] w-screen h-[400px] -left-4 md:left-0 md:top-20 top-40">
+              <Image
+                src="/assets/images/p-10/img.png"
+                alt="squid-bg"
+                objectFit="cover"
+                layout="fill"
+                objectPosition="center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

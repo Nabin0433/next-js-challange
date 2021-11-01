@@ -57,17 +57,17 @@ export default [
   },
   {
     name: "day-9",
-    tittle: "..",
-    tag: "Soon ...",
+    tittle: "food delivery app",
+    tag: "Completed",
     link: "/p-9/home",
-    info: "...",
+    info: "The most widely available food delivery service, active in six continents and first or second in gross orders in most countries",
   },
   {
     name: "day-10",
-    tittle: "....",
-    tag: "Soon ...",
+    tittle: "Squid Game",
+    tag: "Completed",
     link: "/p-10/home",
-    info: "...",
+    info: "Squid Game (Korean: 오징어 게임; RR: Ojing-eo Geim) is a South Korean survival drama television series on Netflix created by Hwang Dong-hyuk, who wrote and directed all nine episodes. Its cast includes Lee Jung-jae, Park Hae-soo, Wi Ha-joon, Jung Ho-yeon, O Yeong-su, Heo Sung-tae, Anupam Tripathi, and Kim Joo-ryoung.",
   },
   {
     name: "day-11",
