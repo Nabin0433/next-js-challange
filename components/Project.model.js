@@ -71,9 +71,16 @@ export default [
   },
   {
     name: "day-11",
-    tittle: "....",
-    tag: "Soon ...",
+    tittle: "Reality Travel",
+    tag: "Completed",
     link: "/p-11/home",
+    info: "High-quality photography. A brief summary of the area, with highlights of important places. Hotel recommendations with web links to hotel and booking sites. Information about recreation and outdoor activities.",
+  },
+  {
+    name: "day-12",
+    tittle: "...",
+    tag: "Soon...",
+    link: "/p-12/home",
     info: "...",
   },
 ];
