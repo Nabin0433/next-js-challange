@@ -11,14 +11,14 @@ export function IconFilledButton({ text, icon }) {
       className={`flex items-center space-x-1 bg-[#0500FF] text-white p-1 border rounded-lg hover:bg-[#3633e7] hover:text-white active:scale-90 border-black`}
     >
       {icon}
-      <p className="text-md">{text}</p>
+      <p className="md:text-md text-sm">{text}</p>
     </button>
   );
 }
 export function FilledButton({ text }) {
   return (
     <button
-      className={`flex items-center space-x-1 bg-[#0500FF] text-white px-3 py-1 border rounded-lg hover:bg-[#3633e7] hover:text-white active:scale-90 border-black`}
+      className={`flex items-center space-x-1 bg-[#0500FF] text-white md:px-3 px-2 py-1 border rounded-lg hover:bg-[#3633e7] hover:text-white active:scale-90 border-black`}
     >
       <p className="text-lg">{text}</p>
     </button>

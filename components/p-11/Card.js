@@ -3,7 +3,7 @@ import Image from "next/image";
 const Card = ({ item }) => {
   return (
     <div className="rounded-2xl shadow-md h-[350px] group hover:shadow-xl cursor-pointer">
-      <div className="relative h-2/3 w-[380px] rounded-full">
+      <div className="relative h-2/3 md:w-[380px] w-full rounded-full">
         <Image
           className="group-hover:scale-90 transition duration-300"
           src={item.img}

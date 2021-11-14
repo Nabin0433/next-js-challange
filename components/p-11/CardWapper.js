@@ -17,7 +17,7 @@ const CardWapper = () => {
       </button>
       <h2 className="text-center font-bold text-3xl">Entire city of choice</h2>
       <div
-        className="rounded-2xl space-x-20 flex justify-center py-16"
+        className="rounded-2xl md:space-x-20 space-y-20 md:space-y-0 md:flex justify-center py-16"
         style={{
           background: "linear-gradient(0deg, #E1F0F4 50%, #fff 50%)",
         }}
