@@ -78,9 +78,9 @@ export default [
   },
   {
     name: "day-12",
-    tittle: "...",
-    tag: "Soon...",
+    tittle: "skeleton Login Form ",
+    tag: "Completed",
     link: "/p-12/home",
-    info: "...",
+    info: "Official Partner for India since 1969, supplies latest Color Shade Cards & manages color trends with best solutions for Textile, Design, Home, Appare",
   },
 ];
