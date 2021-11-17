@@ -78,9 +78,23 @@ export default [
   },
   {
     name: "day-12",
-    tittle: "skeleton Login Form ",
+    tittle: "Skeleton Login Form",
     tag: "Completed",
     link: "/p-12/home",
     info: "Official Partner for India since 1969, supplies latest Color Shade Cards & manages color trends with best solutions for Textile, Design, Home, Appare",
+  },
+  {
+    name: "day-13",
+    tittle: "Product Management",
+    tag: "Completed",
+    link: "/p-13/home",
+    info: "Product management is the job of looking after a specific product within a business. ... That means coming up with a product strategy, thinking about what to build (Product Development), and working out how to market and sell the product (Product Marketing).",
+  },
+  {
+    name: "day-14",
+    tittle: "..",
+    tag: "soon...",
+    link: "/p-14/home",
+    info: "....",
   },
 ];
