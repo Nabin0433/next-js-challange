@@ -92,9 +92,16 @@ export default [
   },
   {
     name: "day-14",
-    tittle: "..",
-    tag: "soon...",
+    tittle: "CarVenture",
+    tag: "Completed",
     link: "/p-14/home",
-    info: "....",
+    info: "A valid driver's license with a photo. A photo ID (For example: a driver's license or passport) Credit or debit card (check the acceptable forms of payment at the location you're renting from)",
+  },
+  {
+    name: "day-15",
+    tittle: "Undefind",
+    tag: "Soon ...",
+    link: "/p-15/home",
+    info: "...",
   },
 ];
