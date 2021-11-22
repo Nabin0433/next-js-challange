@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="md:flex hidden  justify-between items-center">
       <div className="cursor-pointer">
         <h2 className="text-xl">CarVenture</h2>
       </div>
