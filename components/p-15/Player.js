@@ -12,7 +12,6 @@ import { debounce } from "lodash";
 import { useSession } from "next-auth/react";
 import { useCallback, useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
-import { playlistStates } from "../../atoms/playlistAtom";
 import { currentTrackState, isPlayingState } from "../../atoms/songAtom";
 import useSpotify from "../../hooks/spotify";
 import useSongInfo from "../../hooks/useSongInfo";
@@ -22,7 +21,6 @@ const Player = () => {
   const songoInfo = useSongInfo();
   const { data: session, status } = useSession();
   const [currentTrackId, setCurrentTrackId] = useRecoilState(currentTrackState);
-  const [playlist, setPlaylist] = useRecoilState(playlistStates);
   const [volume, setVolume] = useState(50);
   const [isPlaying, setIsPlaying] = useRecoilState(isPlayingState);
 

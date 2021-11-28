@@ -99,9 +99,16 @@ export default [
   },
   {
     name: "day-15",
-    tittle: "Undefind",
-    tag: "Soon ...",
+    tittle: "Spotify-clone",
+    tag: "Completed",
     link: "/p-15/home",
-    info: "...",
+    info: "(Pocket-lint) - Spotify is a digital music streaming service that gives you access to millions of songs, podcasts and videos from artists all over the world, like Apple Music. ... The free version of Spotify can be accessed on PC, laptop and mobile phone, but the full service needs a Spotify Premium subscription",
+  },
+  {
+    name: "day-16",
+    tittle: "Null",
+    tag: "Soon..",
+    link: "/p-16/home",
+    info: "....",
   },
 ];
