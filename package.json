@@ -28,6 +28,7 @@
     "react-typewriter": "^0.4.1",
     "react-use-gesture": "^9.1.3",
     "react-water-wave": "^1.0.5",
+    "recoil": "^0.5.2",
     "spotify-web-api-node": "^5.0.2",
     "three": "^0.132.2"
   },

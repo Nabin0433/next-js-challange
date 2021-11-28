@@ -1,12 +1,14 @@
 import { SessionProvider } from "next-auth/react";
-import "tailwindcss/tailwind.css";
+import { RecoilRoot } from "recoil";
 import "../components/p-7/mobiles/test.css";
 import "../global/styles/global.css";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
-      <Component {...pageProps} />
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
     </SessionProvider>
   );
 }

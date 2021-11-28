@@ -10,7 +10,7 @@ const spotifyApi = new SpotifyWebApi({
 const useSpotify = () => {
   const { data: session, status } = useSession();
   useEffect(() => {
-    if (session) {
+    if (session.user.accessToken) {
       if (session.error === "RefreshAccessTokenError") {
         signIn();
       }
