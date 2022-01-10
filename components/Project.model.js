@@ -106,7 +106,14 @@ export default [
   },
   {
     name: "day-16",
-    tittle: "Null",
+    tittle: "Banking App Landing page",
+    tag: "Completed",
+    link: "/p-16/home",
+    info: "Mobile Banking App Landing Page is a responsive landing page template that has been created for presentation of mobile apps and mobile banking.",
+  },
+  {
+    name: "day-16",
+    tittle: "null",
     tag: "Soon..",
     link: "/p-16/home",
     info: "....",
