@@ -112,10 +112,17 @@ export default [
     info: "Mobile Banking App Landing Page is a responsive landing page template that has been created for presentation of mobile apps and mobile banking.",
   },
   {
-    name: "day-16",
+    name: "day-17",
+    tittle: "Reality Pay",
+    tag: "Completed",
+    link: "/p-17/home",
+    info: "PayRetailers is a payment gateway that supports a wide range of payment methods in LATAM. Accept digital payments on any device and increase your conversion rates. One Payment Platform. PCI DSS Level 1. Best-in-class security. Multi-currency processing.",
+  },
+  {
+    name: "day-18",
     tittle: "null",
     tag: "Soon..",
-    link: "/p-16/home",
+    link: "/p-18/home",
     info: "....",
   },
 ];
