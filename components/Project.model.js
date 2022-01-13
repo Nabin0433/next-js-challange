@@ -120,9 +120,23 @@ export default [
   },
   {
     name: "day-18",
+    tittle: "Portfolio",
+    tag: "Completed",
+    link: "/p-18/home",
+    info: "A portfolio is a compilation of materials that exemplifies your beliefs, skills, qualifications, education, training and experiences.",
+  },
+  {
+    name: "day-19",
     tittle: "null",
     tag: "Soon..",
-    link: "/p-18/home",
+    link: "/p-19/home",
+    info: "....",
+  },
+  {
+    name: "day-20",
+    tittle: "null",
+    tag: "Soon..",
+    link: "/p-20/home",
     info: "....",
   },
 ];

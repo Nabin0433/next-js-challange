@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .customContainer {
+    @apply px-2 md:px-4 lg:px-20 2xl:px-40;
+  }
+  .button {
+    @apply h-5 w-5 cursor-pointer hover:scale-125 transform transition duration-100 ease-out;
+  }
+}
+
+body {
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
 .img {
   /* animation: imgmove infinite ease 2000ms; */
   animation: 20s linear 0s infinite normal none running imgmove;
@@ -57,12 +71,5 @@
 @keyframes ani {
   100% {
     transform: translate3d(0, 21px, 0);
-  }
-}
-/* for p-15 */
-
-@layer components {
-  .button {
-    @apply h-5 w-5 cursor-pointer hover:scale-125 transform transition duration-100 ease-out;
   }
 }
