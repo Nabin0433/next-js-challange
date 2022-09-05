@@ -9,6 +9,7 @@ module.exports = {
         hover_primary_p_2: "#043D8D",
         danger: "#e3342f",
         p_8_primary: "#EF2A82",
+        p_19_primary: "#091B18",
       }),
     },
   },
