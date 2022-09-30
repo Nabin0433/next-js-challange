@@ -1,6 +1,7 @@
 import { getToken } from "next-auth/jwt";
 import { NextResponse } from "next/server";
 
+
 export async function middleware(req, res, next) {
   const { pathname } = req.nextUrl;
   if (pathname === "/p-15/home") {
@@ -14,3 +15,5 @@ export async function middleware(req, res, next) {
   }
   return NextResponse.next();
 }
+
+
