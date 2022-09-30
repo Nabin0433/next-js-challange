@@ -21,14 +21,14 @@ const Header = () => {
                 <div className='md:flex hidden items-center justify-center rounded md:col-span-3'>
                     <div className='bg-[#0A1F1C] p-4 space-x-2'>
                         <NavButton title={'Buy Tickets'} isActive />
-                        <NavButton title={'Logout'} />
+                        <NavButton title={'Logout'} isActive={undefined} />
                     </div>
                 </div>
                 <div className='flex flex-col ml-auto items-center justify-center text-right'>
                     {/* <Bars3BottomRightIcon /> */}
                     <Bars3BottomRightIcon className='h-8 w-8 text-white cursor-pointer' />
                     <span className='md:hidden text-xs'>
-                        <NavButton title={'Logout'} />
+                        <NavButton title={'Logout'} isActive={undefined} />
                     </span>
                 </div>
             </header>
