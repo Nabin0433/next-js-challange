@@ -1,6 +1,6 @@
 import React from "react";
 import { TransitionMotion, spring } from "react-motion";
-import TypeWriter from "react-typewriter";
+// import TypeWriter from "react-typewriter";
 
 const leavingSpringConfig = { stiffness: 60, damping: 15 };
 
@@ -81,24 +81,24 @@ export default class AnimatedContact extends React.Component {
         <div className="absolute  inset-0 bg-gray-700 z-20 text-gray-200">
           <div className="flex justify-between items-center mt-8 ml-8 md:mx-80 md:mt-20">
             <div className="">
-              <TypeWriter typing={3}>
+              {/* <TypeWriter typing={3}> */}
                 <h2 className="font-bold text-2xl md:text-7xl">
                   {this.item.h2}
                 </h2>
-              </TypeWriter>
+              {/* </TypeWriter> */}
               <br />
-              <TypeWriter typing={4}>
+              {/* <TypeWriter typing={4}> */}
                 <p className="md:text-base text-sm font-normal ">
                   {this.item.p}
                 </p>
-              </TypeWriter>
+              {/* </TypeWriter> */}
               <br className="hidden" />
               <br />
-              <TypeWriter typing={3}>
+              {/* <TypeWriter typing={3}> */}
                 <button className="md:py-3 z-40 md:px-20 py-3 px-8 rounded-full shadow hover:text-gray-300">
                   <a href={this.item.link}>Mail us To {this.item.btn}</a>
                 </button>
-              </TypeWriter>
+              {/* </TypeWriter> */}
             </div>
           </div>
         </div>
